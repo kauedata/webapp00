@@ -4,6 +4,9 @@ import streamlit as st
 # Use st.title("") para adicionar um TÍTULO ao seu Web app
 st.title("Primeiro site teste Streamlit")
 
+a = float(st.text_input("Digite valor a: "))
+st.write(a)
+
 # Use st.header("") para adicionar um CABEÇALHO ao seu Web app
 st.header("SENAI Roberto Mange")
 
