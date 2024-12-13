@@ -7,12 +7,15 @@ st.title("Primeiro site teste Streamlit")
 a = float(st.text_input("Digite valor a: "))
 b = float(st.text_input("Digite valor b: "))
 media = (a+b)/2
-if media>5:
-  st.write("Aprovado(a)!")
-  st.write(media)
-else:
-  st.write("REC! :(")
-  st.write(media)
+
+BotaoOK = st.button("Calcular")
+if BotaoOK:
+  if media>5:
+    st.write("Aprovado(a)!")
+    st.write(media)
+  else:
+    st.write("REC! :(")
+    st.write(media)
 
 # Use st.header("") para adicionar um CABEÇALHO ao seu Web app
 st.header("SENAI Roberto Mange")
